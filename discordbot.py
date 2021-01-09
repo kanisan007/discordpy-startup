@@ -4,7 +4,6 @@ import ssl
 from os.path import join, dirname
 
 from discord.ext import commands
-import os
 import traceback
 
 from dotenv import load_dotenv
