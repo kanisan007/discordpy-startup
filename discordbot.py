@@ -31,5 +31,9 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pien')
 
+@bot.command()
+async def kiekie(ctx):
+    await ctx.send('manji')
+
 
 bot.run(token)
