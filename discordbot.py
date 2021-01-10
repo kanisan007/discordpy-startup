@@ -36,9 +36,9 @@ async def kiekie(ctx):
 
 
 @bot.command()
-async def on_message(ctx):
-    text = "マスターおはよう"#message.author.mentionでメンション
-    await ctx.send(text)#チャットされたチャンネルでチャットする
+async def ohayou(ctx):
+    text = "マスターおはよう"
+    await ctx.send(text)
 
 
 bot.run(token)
