@@ -35,12 +35,10 @@ async def kiekie(ctx):
     await ctx.send('manji')
 
 
-@bot.event
-async def on_message(message):
-    if message.content.startswith("おはよう"):#おはように反応
-        if bot.user != message.author:#自身には反応しない
-            text = message.author.mention+"さんおはよう"#message.author.mentionでメンション
-            await message.send_message(message.channel, text)#チャットされたチャンネルでチャットする
+@bot.command()
+async def on_message(ctx):
+    text = "マスターおはよう"#message.author.mentionでメンション
+    await ctx.send(text)#チャットされたチャンネルでチャットする
 
 
 bot.run(token)
